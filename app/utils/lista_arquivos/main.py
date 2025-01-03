@@ -2,7 +2,9 @@ import os
 
 def lista_videos(pasta):
     resp = []
-    caminho_origem = f'/data/web/midia_videos{pasta}'
+    #caminho_origem = f'/home/daniel-catto/projeto/django_w3school/static/{pasta}'
+    caminho_origem = f'/data/web/media/{pasta}'
+
     for raiz, pasta, arquivos in os.walk(caminho_origem):
         
         for i in arquivos:
